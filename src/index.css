@@ -1,13 +1,53 @@
+:root {
+  --color-background: #FAFBFF;
+  --color-background-painel: ##1A1731;
+  --color-primary-lighter: #9196AB;
+  --color-primary-light: #E4E6F1;
+  --color-primary: #3E4157;
+  --color-primary-dark: #3E4157;
+  --color-primary-darker: #32264D;
+  --color-secondary: #117EFF;
+  --color-secondary-dark: #04BF58;
+  --color-box-base: #117EFF;
+  --color-box-footer: #FAFAFC;
+  --color-bullet: #9196AB;
+  --color-input-border: #CCCFDE;
+}
+
+body::-webkit-scrollbar{
+  display: none
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Gotham-Book', 'Gotham-Bold' , sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('./assets/fonts/Gotham-Bold.eot');
+  src: url('./assets/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), 
+       url('./assets/fonts/Gotham-Bold.woff2') format('woff2'), 
+       url('./assets/fonts/Gotham-Bold.woff') format('woff'), 
+       url('./assets/fonts/Gotham-Bold.ttf')  format('truetype'),
+       url('./assets/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg'); 
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('./assets/fonts/Gotham-Book.eot');
+  src: url('./assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), 
+       url('./assets/fonts/Gotham-Book.woff2') format('woff2'), 
+       url('./assets/fonts/Gotham-Book.woff') format('woff'), 
+       url('./assets/fonts/Gotham-Book.ttf')  format('truetype'),
+       url('./assets/fonts/Gotham-Book.svg#Gotham-Book') format('svg'); 
 }
