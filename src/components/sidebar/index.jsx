@@ -1,5 +1,5 @@
 import React from 'react'
-import logoD1 from '../../assets/images/logotipo.png'
+import logoD1 from '../../assets/images/logotipo-white.png'
 import './index.css'
 
 
@@ -12,6 +12,12 @@ function SideBar(){
 
             <img src={logoD1} alt="Logo D1"/>
 
+
+            <div className="sideBarIcons">
+
+                
+
+            </div>
 
         </div>
 

@@ -1,0 +1,17 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    flex: 0.2;
+    width: 100%;
+    max-width: 100px;
+    height: 768px;
+    background: var(--color-background-painel);
+    padding: 35px 0;
+}
+
+.sideBar > img {
+    width: 50%;
+    object-fit: contain;
+}

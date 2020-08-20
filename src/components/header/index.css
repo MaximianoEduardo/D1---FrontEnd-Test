@@ -1,0 +1,86 @@
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.8;
+    width: 100%;
+    height: 90px;
+    max-width: 1330px;
+    margin: 20px auto;
+
+}
+
+.right__header{
+    display: flex;
+    align-items: center;
+}
+
+
+.header__user{
+    background: var(--color-secondary);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Gotham-Bold';
+    text-transform: uppercase;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 26px;
+
+}
+
+.header__company{
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid var(--color-border-company);
+    border-radius: 10px;
+    padding: 5px 0;
+    text-align: center;
+
+}
+
+.header__company > img{
+
+    max-width: 66px;
+
+}
+
+
+.left__header{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.left__header > input{
+
+    width: 300px;
+    height: 40px;
+    border: 1px solid var(--color-input-border);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.left__buttonJornada{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    background: var(--color-secondary);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+    font-family: 'Gotham-Bold';
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}

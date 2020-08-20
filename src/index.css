@@ -1,6 +1,6 @@
 :root {
   --color-background: #FAFBFF;
-  --color-background-painel: ##1A1731;
+  --color-background-painel: #1A1731;
   --color-primary-lighter: #9196AB;
   --color-primary-light: #E4E6F1;
   --color-primary: #3E4157;
@@ -12,6 +12,7 @@
   --color-box-footer: #FAFAFC;
   --color-bullet: #9196AB;
   --color-input-border: #CCCFDE;
+  --color-border-company: #F7F7F7;
 }
 
 body::-webkit-scrollbar{
