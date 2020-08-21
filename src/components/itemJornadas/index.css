@@ -1,0 +1,70 @@
+.leftContent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 90px;
+    max-width: 1330px;
+    margin: 20px auto;
+}
+
+.leftContent h2{
+    font-family: 'Gotham-Bold';
+    color: var(--color-primary);
+    font-size: 16px;
+    margin-bottom: 34px;
+
+}
+
+.itemJornadas{
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    height: auto;
+}
+
+.itemJornadas + .itemJornadas{
+
+    margin: 20px 0;
+
+}
+
+.itemJornadas > img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.itemJornadas .name {
+    display: inline-block;
+    width: 70%;
+    font-family: 'Gotham-Book';
+    font-size: 15px;
+    color: var(--color-primary);
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.itemJornadas.active .name{
+    font-family: 'Gotham-Bold';
+    color: var(--color-secondary);
+}
+
+.itemJornadas.active .number{
+    font-family: 'Gotham-Bold';
+    background: var(--color-secondary);
+    border: none
+}
+
+.itemJornadas .number{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #EBEEF6;
+    background: #E4E6F1;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Gotham-Bold';
+    padding: 3px;
+}
