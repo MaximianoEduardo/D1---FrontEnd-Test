@@ -1,10 +1,29 @@
-import React from 'react';
+import React , { useEffect, useState }from 'react'
+import api from './service/apiD1'
+import { useDataLayerValue } from './service/dataLayer'
 import SideBar from './components/sidebar';
 import Header from './components/header';
 import ItemJornadas from './components/itemJornadas'
 import './App.css';
 
 function App() {
+
+  const [ filter  , dispatch] = useDataLayerValue()
+
+    
+  useEffect(() => {
+      api.get('filter')
+          .then(response => 
+              
+            dispatch({
+              type: 'SET_FILTER',
+              filter: response
+            })
+
+          );
+  
+  }, []); 
+
   return (
     <div className="App">
       <SideBar />
@@ -14,7 +33,7 @@ function App() {
 
         <h2> Jornadas </h2>
 
-        <ItemJornadas title='' quantidade='' />
+        <ItemJornadas/>
 
 
       </div>

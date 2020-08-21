@@ -1,3 +1,5 @@
 <h4 align="center"> 
-	🚧  D1 💻 Em construção... 🚧
+	🚧  D1 💻 Em construção... 🚧 
 </h4>
+
+🚧 Item Styles 🚧 
