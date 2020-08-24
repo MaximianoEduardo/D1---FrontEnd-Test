@@ -21,7 +21,7 @@ function ItemJornadas(){
 
                  return(
                     console.log(filterItem),
-                    <Item key={filterItem.id} name={filterItem.name} />
+                    <Item key={filterItem.id} id={filterItem.id} name={filterItem.name} quantity={filterItem.quantity} />
                 )
 
                })

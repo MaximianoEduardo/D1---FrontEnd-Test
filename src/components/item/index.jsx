@@ -1,20 +1,20 @@
 import React from 'react'
-import todasSvg from '../../assets/icons/table.svg'
 
-
-function Item({name}){
+function Item({id ,name, quantity}){
   
+    
 
     return(
         
         <>  
 
-            <span className='itemJornadas active'>
+            <span className='itemJornadas'>
 
-                <img src={todasSvg} alt=""/>
+                <p className={'Itemsvg' + id} />
 
                 <p className='name'> {name} </p>
 
+                <p className='number'> {quantity} </p>
             </span>
 
         </>
