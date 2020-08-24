@@ -4,6 +4,13 @@ export const initialState = {
         name: null,
         quantity: null
 
+    }],
+    journey: [{
+        id: null,
+        name: null,
+        recipients: null,
+        status: null,
+        success: null
     }]
 }
 // Empty DataLayer
@@ -20,6 +27,11 @@ const reducer = (state, action) => {
                 ...state,
                 filter: action.filter
         
+            }
+        case 'SET_JOURNEY': 
+            return {
+                ...state,
+                journey: action.journey
             }
 
         default:
