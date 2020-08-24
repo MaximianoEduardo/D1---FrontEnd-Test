@@ -36,12 +36,12 @@
     min-width: 118px;
 }
 
-.itemJornadas.active .name{
+.itemJornadas.true .name{
     font-family: 'Gotham-Bold';
     color: var(--color-secondary);
 }
 
-.itemJornadas.active .number{
+.itemJornadas.true .number{
     font-family: 'Gotham-Bold';
     background: var(--color-secondary);
     border: none

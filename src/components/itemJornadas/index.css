@@ -5,16 +5,12 @@
     height: auto;
 }
 
-.itemJornadas:first{
-    margin-bottom: 10px;
-}
-
 .itemJornadas:hover{
     cursor: pointer;
 }
 
 .itemJornadas {
 
-    margin: 20px 0;
+    margin: 10px 0;
 
 }

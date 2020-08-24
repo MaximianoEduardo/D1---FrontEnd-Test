@@ -1,6 +1,5 @@
-import React , { useEffect, useState }from 'react'
+import React from 'react'
 import { useDataLayerValue } from '../../service/dataLayer'
-import todasSvg from '../../assets/icons/table.svg'
 import Item from '../item/index'
 import './index.css'
 
@@ -8,8 +7,6 @@ import './index.css'
 function ItemJornadas(){
   
     const [ {filter}  , dispatch] = useDataLayerValue()
-
-    
 
     return(
         
@@ -20,13 +17,15 @@ function ItemJornadas(){
                filter.map(filterItem => {
 
                  return(
-                    console.log(filterItem),
-                    <Item key={filterItem.id} id={filterItem.id} name={filterItem.name} quantity={filterItem.quantity} />
+                    <Item 
+                        key={filterItem.id} 
+                        id={filterItem.id} 
+                        name={filterItem.name} 
+                        quantity={filterItem.quantity} 
+                    />
                 )
 
                })
-                
-
 
             }
 

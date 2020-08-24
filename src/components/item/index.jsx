@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.css'
 
 function Item({id ,name, quantity}){
   
-    
+    const [ active, setActive ] = useState(false)
+
+
+    function clickJornadas(){
+
+        setActive(!active)
+
+    }
 
     return(
         
         <>  
 
-            <span className='itemJornadas'>
+            <span className={'itemJornadas ' + active} onClick={clickJornadas()} dataId={id} >
 
                 <p className={'svgbox Itemsvg' + id} />
 
