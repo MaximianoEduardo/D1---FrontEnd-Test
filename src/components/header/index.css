@@ -69,8 +69,9 @@
 }
 
 .left__buttonJornada{
-    display: inline-block;
-    width: 170px;
+    display: flex;
+    align-items: center;
+    width: 180px;
     height: 40px;
     background: var(--color-secondary);
     color: #fff;
@@ -82,4 +83,11 @@
     padding: 10px 20px;
     text-decoration: none;
 
+}
+.left__buttonJornada > img{
+
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }

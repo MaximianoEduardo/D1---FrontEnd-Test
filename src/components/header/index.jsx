@@ -1,5 +1,6 @@
 import React from 'react'
 import CompanyLogo from '../../assets/images/acme-logo.png'
+import plusIcon from '../../assets/icons/plus.svg'
 import './index.css'
 
 
@@ -25,8 +26,8 @@ function Header(){
 
                 <input type="text" placeholder='Buscar' />
 
-                <a href='' className='left__buttonJornada'> 
-                    + Nova Jornada
+                <a href='#' className='left__buttonJornada'> 
+                   <img src={plusIcon} alt=""/>  Nova Jornada
                 </a>
 
             </div>
