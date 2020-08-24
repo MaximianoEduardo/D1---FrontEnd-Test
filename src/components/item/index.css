@@ -1,0 +1,62 @@
+.itemJornadas > .svgbox {
+    display: inline-block;
+    min-width: 22px;
+    height: 22px;
+    background-size: 22px !important;
+    margin-right: 10px;
+    
+}
+
+.svgbox.Itemsvg0{
+    background: url('../../assets/icons/table.svg') no-repeat center;
+}
+.svgbox.Itemsvg1{
+    background: url('../../assets/icons/paper-plane.svg') no-repeat center;
+}
+.svgbox.Itemsvg2{
+    background: url('../../assets/icons/play-circle.svg') no-repeat center;
+}
+.svgbox.Itemsvg3{
+    background: url('../../assets/icons/pen.svg') no-repeat center;
+}
+.svgbox.Itemsvg4{
+    background: url('../../assets/icons/bed.svg') no-repeat center;
+}
+.svgbox.Itemsvg5{
+    background: url('../../assets/icons/check.svg') no-repeat center;
+}
+
+.itemJornadas .name {
+    display: inline-block;
+    width: 70%;
+    font-family: 'Gotham-Book';
+    font-size: 15px;
+    color: var(--color-primary);
+    text-transform: capitalize;
+    min-width: 118px;
+}
+
+.itemJornadas.active .name{
+    font-family: 'Gotham-Bold';
+    color: var(--color-secondary);
+}
+
+.itemJornadas.active .number{
+    font-family: 'Gotham-Bold';
+    background: var(--color-secondary);
+    border: none
+}
+
+.itemJornadas .number{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #EBEEF6;
+    background: #E4E6F1;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Gotham-Bold';
+    padding: 2px;
+    text-align: center;
+}

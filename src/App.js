@@ -4,6 +4,7 @@ import { useDataLayerValue } from './service/dataLayer'
 import SideBar from './components/sidebar';
 import Header from './components/header';
 import ItemJornadas from './components/itemJornadas'
+import Journey from './components/journey';
 import './App.css';
 
 function App() {
@@ -27,14 +28,25 @@ function App() {
       <SideBar />
       <Header />
 
-      <div className='leftContent'>
+      <div className='mainContent'>
 
-        <h2> Jornadas </h2>
+        <div className='leftContent'>
 
-        <ItemJornadas/>
+          <h2> Jornadas </h2>
+
+          <ItemJornadas/>
 
 
+        </div>
+
+        <div className='rightContent'>
+
+          <Journey />
+
+        </div>
       </div>
+
+      
       
 
     </div>

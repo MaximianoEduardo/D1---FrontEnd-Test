@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 
 function Item({id ,name, quantity}){
   
@@ -10,7 +11,7 @@ function Item({id ,name, quantity}){
 
             <span className='itemJornadas'>
 
-                <p className={'Itemsvg' + id} />
+                <p className={'svgbox Itemsvg' + id} />
 
                 <p className='name'> {name} </p>
 
