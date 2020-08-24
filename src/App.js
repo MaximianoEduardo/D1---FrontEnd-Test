@@ -1,4 +1,4 @@
-import React , { useEffect, useState }from 'react'
+import React , { useEffect }from 'react'
 import api from './service/apiD1'
 import { useDataLayerValue } from './service/dataLayer'
 import SideBar from './components/sidebar';
@@ -19,7 +19,8 @@ function App() {
       dispatch({
         type: 'SET_FILTER',
         filter: response.data
-      })
+      }),
+      
     );
   }, []); 
 
