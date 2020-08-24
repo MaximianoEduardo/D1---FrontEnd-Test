@@ -31,7 +31,15 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+#root{
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+}
+
 
 @font-face {
   font-family: 'Gotham-Bold';
