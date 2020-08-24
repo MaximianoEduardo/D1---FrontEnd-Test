@@ -1,12 +1,9 @@
 import React from 'react'
-import { useDataLayerValue } from '../../service/dataLayer'
 import todasSvg from '../../assets/icons/table.svg'
 
 
-function Item({name, number}){
+function Item({name}){
   
-    const [ {filter}  , dispatch] = useDataLayerValue()
-
 
     return(
         
@@ -16,9 +13,8 @@ function Item({name, number}){
 
                 <img src={todasSvg} alt=""/>
 
-                <p className='name'> {filter.name} </p>
+                <p className='name'> {name} </p>
 
-                <p className='number'> {filter.number} </p>
             </span>
 
         </>

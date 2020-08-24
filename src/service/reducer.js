@@ -1,5 +1,10 @@
 export const initialState = {
-    filter: []
+    filter: [{
+        id: null,
+        name: null,
+        quantity: null
+
+    }]
 }
 // Empty DataLayer
 
@@ -14,13 +19,9 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 filter: action.filter
-            }
-        // case 'SET_QUANTIDADE':
-        //     return {
-        //          ...state,
-        //             title: action.quantidade
-        //     }
         
+            }
+
         default:
             return state
     }

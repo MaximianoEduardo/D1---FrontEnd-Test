@@ -12,16 +12,14 @@ function App() {
 
     
   useEffect(() => {
-      api.get('filter')
-          .then(response => 
-              
-            dispatch({
-              type: 'SET_FILTER',
-              filter: response
-            })
+    api.get('filter')
+    .then(response => 
 
-          );
-  
+      dispatch({
+        type: 'SET_FILTER',
+        filter: response.data
+      })
+    );
   }, []); 
 
   return (
