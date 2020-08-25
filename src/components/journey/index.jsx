@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import JourneyItem from '../itemJourney'
 import { useDataLayerValue } from '../../service/dataLayer'
 import api from '../../service/apiD1'
@@ -9,16 +9,25 @@ function Journey(){
     const [ {journey}  , dispatch] = useDataLayerValue()
 
     
+    const [ filterAtive, setFilterAtive ] = useState(false)
+
     useEffect(() => {
-      api.get('journey')
-      .then(response => 
-  
-        dispatch({
-          type: 'SET_JOURNEY',
-          journey: response.data
-        }),
+
+
+      if( !filterAtive ){
+          api.get('journey')
+            .then(response => 
         
-      );
+                dispatch({
+                type: 'SET_JOURNEY',
+                journey: response.data
+                }),
+                
+            );
+      }
+
+
+      
     }, []); 
 
     return(

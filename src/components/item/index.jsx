@@ -7,45 +7,41 @@ function Item({id ,name, quantity}){
   
     const [ active, setActive ] = useState(false)
 
-    const [ dispatch] = useDataLayerValue()
-   
-
-    // useEffect(() => {
-
-    //     if(id){
-
-    //         api.get('filter')
-    //             .then(response => 
-            
-    //                 dispatch({
-    //                     type: 'SET_FILTER',
-    //                     filter: response.data
-    //                 }),
-            
-    //         );
-
-    //     }
-
-
-        
-    // }, []); 
-
+    const [ {journey} ,dispatch] = useDataLayerValue()
 
     function clickJornadas(id){
 
         setActive(!active)
 
-        api.get('journey/'+ id)
-        .then(response => 
-    
-            // dispatch({
-            //     type: 'SET_FILTER',
-            //     filter: response.data
-            // }),
-          
-            console.log(response.data)
+        if(id === 0){
 
-        );
+            api.get('journey')
+                .then(response => 
+            
+                    dispatch({
+                    type: 'SET_JOURNEY',
+                    journey: response.data
+                    }),
+                    
+                );
+        }
+        else {
+
+                api.get('journey/'+ id)
+                .then(response => 
+            
+                    dispatch({
+                        type: 'SET_JOURNEY',
+                        journey: response.data
+                    }),
+                
+
+                );
+
+            }
+
+
+        
 
         console.log(id)
 
