@@ -8,26 +8,18 @@ function Journey(){
   
     const [ {journey}  , dispatch] = useDataLayerValue()
 
-    
-    const [ filterAtive, setFilterAtive ] = useState(false)
 
     useEffect(() => {
-
-
-      if( !filterAtive ){
-          api.get('journey')
-            .then(response => 
-        
-                dispatch({
-                type: 'SET_JOURNEY',
-                journey: response.data
-                }),
-                
-            );
-      }
-
-
-      
+        api.get('journey')
+        .then(response => 
+    
+            dispatch({
+            type: 'SET_JOURNEY',
+            journey: response.data
+            }),
+            
+        );
+          
     }, []); 
 
     return(

@@ -69,3 +69,16 @@
     padding: 2px;
     text-align: center;
 }
+
+.leftContent input[type='checkbox'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+ .leftContent input[type='checkbox'] + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+  
