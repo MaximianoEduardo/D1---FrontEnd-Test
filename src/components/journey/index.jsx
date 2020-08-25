@@ -44,7 +44,7 @@ function Journey(){
                         journey.map(journeyItem => {
 
                             return(
-                                console.log(journeyItem),
+                                
                                 <JourneyItem 
                                     key={journeyItem.id} 
                                     id={journeyItem.id} 

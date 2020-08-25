@@ -42,7 +42,7 @@
 
 .journeyItem .journeyItemName{
 
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 14px;
     font-family: 'Gotham-Bold';
     color: var(--color-primary);

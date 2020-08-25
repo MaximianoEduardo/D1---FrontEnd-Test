@@ -6,7 +6,7 @@ function JourneyItem({ id, name, destinary, status, sucess }){
     function statusString()
         {    
 
-            console.log(status)
+            //console.log(status)
 
             switch (status) {
                 case status === 1:
