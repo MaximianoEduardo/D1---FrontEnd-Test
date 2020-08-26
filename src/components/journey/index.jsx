@@ -14,8 +14,8 @@ function Journey(){
         .then(response => 
     
             dispatch({
-            type: 'SET_JOURNEY',
-            journey: response.data
+                type: 'SET_JOURNEY',
+                journey: response.data
             }),
             
         );
