@@ -10,7 +10,7 @@
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-funcionalidades">Funcionalidades</a> •
- <a href="#-layout">Layout</a> • 
+ <a href="#-Live-Code">Layout</a> • 
  <a href="#-layout">Live Code</a> • 
  <a href="#-como-executar-o-projeto">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
@@ -20,8 +20,8 @@
 
 ## 💻 Sobre o projeto
 
-	Processo seletivo para Desenvolvedor front-end​ na **[D1](https://www.d1.cx)**. 
-	O objetivo é avaliar seu conhecimento e experiência com React e bibliotecas relacionadas para desenvolvimento front-end.
+Processo seletivo para Desenvolvedor front-end​ na **[D1](https://www.d1.cx)**. 
+O objetivo é avaliar seu conhecimento e experiência com React e bibliotecas relacionadas para desenvolvimento front-end.
 ---
 
 ## ⚙️ Funcionalidades
@@ -36,13 +36,9 @@
 
 ## 💻 Live Code
 
-O projeto esta hospedado 
+O projeto esta hospedado no [heroku](https://www.heroku.com/)
 
-**[D1]()**
-
-
----
-
+Acesse: **[D1]()**
 
 ---
 
