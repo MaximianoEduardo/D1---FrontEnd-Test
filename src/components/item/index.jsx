@@ -5,13 +5,17 @@ import './index.css'
 
 function Item({id ,name, quantity}){
   
-    const [ active, setActive ] = useState(false)
-
+    const [ checked, setChecked ] = useState(false)
+    const [active, setActive] = useState(false)
     const [ {journey} ,dispatch] = useDataLayerValue()
 
-    function clickJornadas(id){
+    const handleOnchange = event => {
 
         setActive(!active)
+        setChecked(event.target.checked)
+    }
+
+    function clickJornadas(id){
 
         if(id === 0){
 
@@ -38,27 +42,33 @@ function Item({id ,name, quantity}){
 
                 );
 
-            }
-
-
-        
-
-        console.log(id)
+        }
 
     }
 
     return(
         
         <>  
+            <input id={id} type="checkbox" 
+                onClick={() => (clickJornadas(id))} 
+                onChange={handleOnchange}
+                data-active={active}
+                defaultChecked={checked}
+            />
+            <label htmlFor={id}>
+             
+                <span id={id} className={'itemJornadas ' + active}>
 
-            <span id={id} className={'itemJornadas ' + active} onClick={() => (clickJornadas(id))} >
+                    <p className={'svgbox Itemsvg' + id} />
 
-                <p className={'svgbox Itemsvg' + id} />
+                    <p className='name'> {name} </p>
 
-                <p className='name'> {name} </p>
+                    <p className='number'> {quantity} </p>
+                </span>
 
-                <p className='number'> {quantity} </p>
-            </span>
+
+            </label>
+            
 
         </>
 
