@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from 'react'
+import React, { useState } from 'react'
 import api from '../../service/apiD1'
 import { useDataLayerValue } from '../../service/dataLayer'
 import './index.css'
@@ -24,8 +24,8 @@ function FilterItens({id ,name, quantity}){
                 .then(response => 
             
                     dispatch({
-                    type: 'SET_JOURNEY',
-                    journey: response.data
+                        type: 'SET_JOURNEY',
+                        journey: response.data
                     }),
                     
                 );

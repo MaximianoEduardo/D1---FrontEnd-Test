@@ -9,20 +9,26 @@ import './App.css';
 
 function App() {
 
-  const [ filter  , dispatch] = useDataLayerValue()
+  const [ journey, dispatch ] = useDataLayerValue()
 
     
   useEffect(() => {
-    api.get('filter')
-    .then(response => 
+    
+    if(journey){
 
-      dispatch({
-        type: 'SET_FILTER',
-        filter: response.data
-      }),
-      
-    );
-  }, []); 
+      api.get('filter')
+      .then(response => 
+
+        dispatch({
+          type: 'SET_FILTER',
+          filter: response.data
+        }),
+        
+      );
+
+    }
+    
+  }, [dispatch, journey]); 
 
   return (
     <>

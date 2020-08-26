@@ -6,7 +6,7 @@ import './index.css'
 
 function Filter(){
   
-    const [ {filter}  , dispatch] = useDataLayerValue()
+    const [ {filter}  ] = useDataLayerValue()
 
     return(
         

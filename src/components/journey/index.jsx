@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import JourneyItem from '../itemJourney'
 import { useDataLayerValue } from '../../service/dataLayer'
 import api from '../../service/apiD1'
@@ -20,7 +20,7 @@ function Journey(){
             
         );
           
-    }, []); 
+    }, [dispatch]); 
 
     return(
         

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import Status from '../Status';
+import React from 'react'
+import Status from '../status';
 
 function JourneyItem({ id, name, destinary, status, sucess }){
 
@@ -37,7 +37,7 @@ function JourneyItem({ id, name, destinary, status, sucess }){
         
       
     
-        <div className='journeyItem'> 
+        <div className='journeyItem' key={id}> 
             
             <span className='journeyItemName'>
                 {name}
