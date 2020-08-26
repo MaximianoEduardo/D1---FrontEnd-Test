@@ -1,4 +1,3 @@
-https://www.heroku.com/
 <h1 align="center">
     <img alt="D1 Teste FrontEnd" title="#D1" style="width: 300px" src="./src/assets/images/logotipo-branco.png" />
 </h1>
