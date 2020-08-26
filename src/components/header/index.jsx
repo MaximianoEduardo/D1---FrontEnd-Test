@@ -2,13 +2,28 @@ import React, {useState} from 'react'
 import CompanyLogo from '../../assets/images/acme-logo.png'
 import plusIcon from '../../assets/icons/plus.svg'
 import Tooltip from 'react-simple-tooltip'
-import './index.css'
 import Modal from '../modal'
+import './index.css'
 
 
 function Header(){
 
-    const [ show, setShow ] = useState( false )
+
+    const useModal = () => {
+
+        const [isShowing, setIsShowing] = useState(false);
+      
+        function toggle() {
+          setIsShowing(!isShowing);
+        }
+      
+        return {
+          isShowing,
+          toggle,
+        }
+    };
+
+    const {isShowing, toggle} = useModal();
 
     return(
 
@@ -41,12 +56,13 @@ function Header(){
             <div className="left__header">
 
                 <input type="text" placeholder='Buscar' />
+                <span className='img'></span>
+                <button type='button' className='left__buttonJornada' onClick={toggle}> 
+                   <img src={plusIcon} alt="Nova Jornada"/>  
+                   Nova Jornada
+                </button>
 
-                <a href='#' className='left__buttonJornada' id="centered-toggle-button" onClick={ () => (setShow(!show)) } > 
-                   <img src={plusIcon} alt=""/>  Nova Jornada
-                   <Modal show={show} />
-                </a>
-
+                <Modal isShowing={isShowing} hide={toggle} />
             </div>
 
         </div>
