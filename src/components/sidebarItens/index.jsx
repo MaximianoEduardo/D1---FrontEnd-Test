@@ -9,6 +9,7 @@ import admin from '../../assets/icons/gem.svg'
 import helpDesk from '../../assets/icons/tools.svg'
 import switchAcc from '../../assets/icons/exchange-alt.svg'
 import logout from  '../../assets/icons/sign-out-alt.svg'
+import './index.css'
 
 function SidebarItens() {
 

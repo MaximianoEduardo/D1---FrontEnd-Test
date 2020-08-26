@@ -3,7 +3,7 @@ import api from '../../service/apiD1'
 import { useDataLayerValue } from '../../service/dataLayer'
 import './index.css'
 
-function Item({id ,name, quantity}){
+function FilterItens({id ,name, quantity}){
   
     const [ checked, setChecked ] = useState(false)
     const [active, setActive] = useState(false)
@@ -77,4 +77,4 @@ function Item({id ,name, quantity}){
 
 }
 
-export default Item
+export default FilterItens

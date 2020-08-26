@@ -1,10 +1,10 @@
 import React from 'react'
 import { useDataLayerValue } from '../../service/dataLayer'
-import Item from '../item/index'
+import FilterItens from '../filterItens/index'
 import './index.css'
 
 
-function ItemJornadas(){
+function Filter(){
   
     const [ {filter}  , dispatch] = useDataLayerValue()
 
@@ -17,7 +17,7 @@ function ItemJornadas(){
                filter.map(filterItem => {
 
                  return(
-                    <Item 
+                    <FilterItens 
                         key={filterItem.id} 
                         id={filterItem.id} 
                         name={filterItem.name} 
@@ -36,4 +36,4 @@ function ItemJornadas(){
 
 }
 
-export default ItemJornadas
+export default Filter

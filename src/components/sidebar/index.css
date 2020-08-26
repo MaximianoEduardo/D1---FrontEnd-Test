@@ -25,32 +25,3 @@
     height: 100%;
     margin-top: 80px
 }
-
-.sideBarIcons .icons{
-
-    margin: 12px 0;
-
-}
-
-.sideBarIcons .icons > img {
-
-    width: 25px;
-    height: 25px;
-
-}
-
-
-.sideBarIcons .divider {
-    display: inline-block;
-    width: 21px;
-    height: 1px;
-    background: transparent linear-gradient(90deg, #00E1FF 0%, #117EFF 100%) 0% 0% no-repeat padding-box;
-    margin: 23px 0;
-}
-
-.sideBarIcons .upIcons,
-.sideBarIcons .downIcons{
-    display: flex;
-    flex-direction: column;
-
-}
