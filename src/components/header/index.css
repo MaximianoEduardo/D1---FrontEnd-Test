@@ -66,6 +66,13 @@
     border: 1px solid var(--color-input-border);
     border-radius: 5px;
     text-align: left;
+    cursor: pointer;
+}
+
+
+.left__header > input:hover{
+
+    box-shadow: 1px 1px 10px 7px rgba(204, 207, 222, 1);
 }
 
 .left__buttonJornada{
@@ -84,6 +91,12 @@
     text-decoration: none;
 
 }
+
+.left__buttonJornada:hover{
+    background: transparent linear-gradient(90deg, #00E1FF 0%, #117EFF 100%) 0% 0% no-repeat padding-box;
+
+}
+
 .left__buttonJornada > img{
 
     display: inline-block;
@@ -91,3 +104,29 @@
     height: 16px;
     margin-right: 5px;
 }
+
+
+
+.modal {
+    width: 500px;
+    background: white;
+    border: 1px solid #ccc;
+    -webkit-transition: 1.1s ease-out;
+    transition: 1.1s ease-out;
+    box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal.off {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    -webkit-transform: scale(0.33);
+            transform: scale(0.33);
+    box-shadow: 1rem 0 0 rgba(0, 0, 0, 0.2);
+  }
