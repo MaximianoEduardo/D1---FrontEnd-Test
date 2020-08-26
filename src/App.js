@@ -25,8 +25,10 @@ function App() {
   }, []); 
 
   return (
-    <div className="App">
+    <>
       <SideBar />
+      <div className="App">
+      
       <Header />
 
       <div className='mainContent'>
@@ -46,11 +48,9 @@ function App() {
 
         </div>
       </div>
-
-      
-      
-
     </div>
+    </>
+    
   );
 }
 

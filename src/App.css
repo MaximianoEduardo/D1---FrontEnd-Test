@@ -12,7 +12,7 @@
     width: 100%;
     height: auto;
     max-width: 1330px;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 .mainContent .leftContent{
@@ -33,9 +33,10 @@
 
 .mainContent .rightContent{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    width: 80%;
     height: auto;
     margin: 20px 0;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
 }
