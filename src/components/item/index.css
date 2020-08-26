@@ -79,6 +79,5 @@
  .leftContent input[type='checkbox'] + label {
     position: relative;
     cursor: pointer;
-    padding-left: 30px;
-  }
+ }
   

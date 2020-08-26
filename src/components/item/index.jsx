@@ -13,12 +13,13 @@ function Item({id ,name, quantity}){
 
         setActive(!active)
         setChecked(event.target.checked)
+
     }
 
     function clickJornadas(id){
 
         if(id === 0){
-
+            
             api.get('journey')
                 .then(response => 
             
@@ -69,7 +70,6 @@ function Item({id ,name, quantity}){
 
             </label>
             
-
         </>
 
     )
