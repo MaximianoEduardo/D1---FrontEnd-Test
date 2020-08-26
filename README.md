@@ -1,4 +1,4 @@
-
+https://www.heroku.com/
 <h1 align="center">
     <img alt="D1 Teste FrontEnd" title="#D1" style="width: 300px" src="./src/assets/images/logotipo-branco.png" />
 </h1>
@@ -91,7 +91,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Axios](https://github.com/axios/axios)**
 -   **[React Content API](https://pt-br.reactjs.org/docs/context.html)**
 
-> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json)
+> Veja o arquivo  [package.json](https://github.com/MaximianoEduardo/D1---FrontEnd-Test/blob/master/package.json)
 
 
 #### **Utilitários**
