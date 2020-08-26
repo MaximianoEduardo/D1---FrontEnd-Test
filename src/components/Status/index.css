@@ -1,0 +1,31 @@
+.journeyItemStatus {
+    display: flex;
+    align-items: center;
+    min-width: 140px;
+}
+
+.journeyItem .journeyItemStatus > .svgbox {
+    display: inline-block;
+    min-width: 22px;
+    height: 22px;
+    background-size: 22px !important;
+    margin-right: 8px;
+    
+}
+
+
+.svg1{
+    background: url('../../assets/icons/paper-plane.svg') no-repeat center;
+}
+.svg2{
+    background: url('../../assets/icons/play-circle.svg') no-repeat center;
+}
+.svg3{
+    background: url('../../assets/icons/pen.svg') no-repeat center;
+}
+.svg4{
+    background: url('../../assets/icons/bed.svg') no-repeat center;
+}
+.svg5{
+    background: url('../../assets/icons/check.svg') no-repeat center;
+}
