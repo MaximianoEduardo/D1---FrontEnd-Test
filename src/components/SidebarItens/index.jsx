@@ -1,8 +1,8 @@
 import React from 'react'
 import Tooltip from 'react-simple-tooltip'
-import grafico from '../../assets/icons/chart-pie.svg'
+import graphic from '../../assets/icons/chart-pie.svg'
 import rocket from '../../assets/icons/rocket.svg'
-import amigos from '../../assets/icons/user-friends.svg'
+import friends from '../../assets/icons/user-friends.svg'
 import ccm from '../../assets/icons/ccm-cloud.svg'
 import external from '../../assets/icons/external-link-alt-solid.svg'
 import admin from '../../assets/icons/gem.svg'
@@ -32,7 +32,7 @@ function SidebarItens() {
                 >
 
                         <div className="icons">
-                            <img src={grafico} alt="Analises"/>
+                            <img src={graphic} alt="Analises"/>
                         </div>
 
                 </Tooltip>
@@ -67,7 +67,7 @@ function SidebarItens() {
                 >
 
                         <div className="icons">
-                            <img src={amigos} alt="Clientes"/>
+                            <img src={friends} alt="Clientes"/>
                         </div>
 
                 </Tooltip>

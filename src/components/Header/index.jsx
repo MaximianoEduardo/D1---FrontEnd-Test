@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import CompanyLogo from '../../assets/images/acme-logo.png'
 import plusIcon from '../../assets/icons/plus.svg'
 import Tooltip from 'react-simple-tooltip'
-import Modal from '../modal'
-import Search from '../search'
+import Modal from '../Modal'
+import Search from '../Search'
 import './index.css'
 
 

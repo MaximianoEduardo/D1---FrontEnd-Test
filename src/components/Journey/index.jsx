@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import JourneyItem from '../itemJourney'
+import JourneyItem from '../ItemJourney'
 import { useDataLayerValue } from '../../service/dataLayer'
 import api from '../../service/apiD1'
 import './index.css'
