@@ -29,8 +29,8 @@
     z-index: 1040;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
-    opacity: .5;
+    background: #1A1731 0% 0% no-repeat padding-box;
+    opacity: 0.5;
   }
   
   .modal-wrapper {
@@ -49,7 +49,7 @@
     z-index: 100;
     background: white;
     position: relative;
-    margin: 1.75rem auto;
+    margin: 9.75rem auto;
     border: 1px solid var(--color-primary-light);
     border-radius: 7px;
     max-width: 450px;
@@ -85,6 +85,10 @@
     align-content: space-between;
   }
 
+  .modal-body > input{
+    margin: 5px 0;
+  }
+
   .modal-body label{
     font-family: 'Gotham-Book';
     color: var(--color-primary);
@@ -95,7 +99,7 @@
     font-weight: 700;
   }
 
-  .modal-body legend{
+  .modal-body .legend{
     color: var(--color-primary-lighter);
     font-family: 'Gotham-Book';
     font-size: 16px;

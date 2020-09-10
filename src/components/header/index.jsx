@@ -8,8 +8,7 @@ import './index.css'
 
 
 function Header(){
-
-
+    
     const useModal = () => {
 
         const [isShowing, setIsShowing] = useState(false);
