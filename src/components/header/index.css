@@ -90,4 +90,11 @@
     margin-right: 5px;
 }
 
+@media screen and (max-width: 1440px){
 
+    .header{
+        width: 80%;
+    }
+    
+
+}

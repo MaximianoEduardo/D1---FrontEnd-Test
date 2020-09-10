@@ -1,8 +1,9 @@
 .App{
     display: flex;
     background: var(--color-background);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -39,4 +40,14 @@
     justify-content: center;
     width: 70%;
     align-items: center;
+}
+
+
+@media screen and (max-width: 1440px){
+
+    .mainContent{
+        width: 80%;
+    }
+    
+
 }
