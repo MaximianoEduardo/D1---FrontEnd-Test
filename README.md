@@ -35,9 +35,9 @@ O objetivo é avaliar seu conhecimento e experiência com React e bibliotecas re
 
 ## 💻 Live Code
 
-O projeto esta hospedado no [heroku](https://www.heroku.com/)
+O projeto esta hospedado: [vercel](https://vercel.com)
 
-Acesse: **[D1](https://d1-frontend.herokuapp.com/)**
+Acesse: **[D1](https://d1-front-end-test.vercel.app/)**
 
 ---
 
