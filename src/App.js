@@ -1,10 +1,10 @@
 import React , { useEffect }from 'react'
 import api from './service/apiD1'
 import { useDataLayerValue } from './service/dataLayer'
-import SideBar from './components/sidebar';
-import Header from './components/header';
-import Filter from './components/filter'
-import Journey from './components/journey';
+import SideBar from './components/Sidebar';
+import Header from './components/Header';
+import Filter from './components/Filter'
+import Journey from './components/Journey';
 import './App.css';
 
 function App() {

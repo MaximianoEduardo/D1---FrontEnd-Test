@@ -87,6 +87,10 @@
 
   .modal-body > input{
     margin: 5px 0;
+    background: #FFFFFF;
+    border: 1px solid #CCCFDE;
+    border-radius: 5px;
+    min-height: 33px;
   }
 
   .modal-body label{

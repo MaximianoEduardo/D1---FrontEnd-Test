@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDataLayerValue } from '../../service/dataLayer'
-import FilterItens from '../filterItens/index'
+import FilterItens from '../FilterItens/index'
 import './index.css'
 
 
