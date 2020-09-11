@@ -2,7 +2,6 @@
     display: flex;
     background: var(--color-background);
     width: 100%;
-    max-width: 1400px;
     height: 100%;
     flex-direction: column;
 }
